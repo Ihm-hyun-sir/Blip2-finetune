@@ -18,3 +18,8 @@ python peft_finetune.py --dataset DATASET --max_length MAX_LEN --epoch N --lr LR
 ```bash
 python peft_finetune.py --dataset fusecap --epoch 20 --lr 5e-5
 ```
+
+if error occurs
+```bash
+LD_LIBRARY_PATH=$CONDA_PREFIX/lib:$LD_LIBRARY_PATH python peft_finetune.py --dataset sharegpt python peft_finetune.py --dataset fusecap --epoch 20 --lr 5e-5
+```
